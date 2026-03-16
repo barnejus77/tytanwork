@@ -9,7 +9,7 @@ if ping -c 1 google.com; then
 	if [$? eq 0]; then 
 		echo "[OK]" Gotowe!
 	else 
-		echo "[ERROR] niestety brak netu"
+		echo "[ERROR] Niestety brak netu"
 	fi
 else 
 	echo "Brak internetu zapis lokalny"
