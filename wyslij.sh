@@ -6,7 +6,7 @@ if ping -c 1 google.com; then
 	read opis
 	git commit -m "$opis"
 	git push
-	if [$? eq 0]; then 
+	if [$? -eq 0]; then 
 		echo "[OK]" Gotowe!
 	else 
 		echo "[ERROR] Niestety brak netu"
@@ -17,7 +17,7 @@ else
 	echo "co dzisaj zrobiles"
 	read opis
 	git commit -m "$opis"
-	if [$? eq 0]; then 
+	if [$? -eq 0]; then 
                 echo "[OK] Gotowe! Zmiany zapisane tylko lokalnie"
         else
                 echo "[ERROR] masz dzisaj pecha nic nie dziala"
